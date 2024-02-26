@@ -6,10 +6,6 @@ from typing import Any, Dict, Optional, Tuple
 
 # This Environment import is only for type checking purpose,
 # and only relevant if rendering GraphiQL with Jinja
-try:
-    from jinja2 import Environment
-except ImportError:  # pragma: no cover
-    pass
 
 from typing_extensions import TypedDict
 
@@ -177,7 +173,7 @@ class GraphiQLConfig(TypedDict):
     graphiql_version: Optional[str]
     graphiql_template: Optional[str]
     graphiql_html_title: Optional[str]
-    jinja_env: Optional[Environment]
+    #jinja_env: Optional[Environment]
 
 
 class GraphiQLOptions(TypedDict):
